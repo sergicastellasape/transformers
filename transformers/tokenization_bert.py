@@ -46,6 +46,10 @@ PRETRAINED_VOCAB_FILES_MAP = {
         'bert-base-cased-finetuned-mrpc': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-finetuned-mrpc-vocab.txt",
         'bert-base-german-dbmdz-cased': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-cased-vocab.txt",
         'bert-base-german-dbmdz-uncased': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-uncased-vocab.txt",
+        'scibert-scivocab-uncased:': "https://s3-us-west-2.amazonaws.com/ai2-s2-research/scibert/huggingface_pytorch/scibert_scivocab_uncased.tar",
+        'scibert-scivocab-cased': "https://s3-us-west-2.amazonaws.com/ai2-s2-research/scibert/huggingface_pytorch/scibert_scivocab_cased.tar",
+        'scibert-basevocab-uncased': "https://s3-us-west-2.amazonaws.com/ai2-s2-research/scibert/huggingface_pytorch/scibert_basevocab_uncased.tar",
+        'scibert-basevocab-cased': "https://s3-us-west-2.amazonaws.com/ai2-s2-research/scibert/huggingface_pytorch/scibert_basevocab_cased.tar"
     }
 }
 
@@ -65,6 +69,10 @@ PRETRAINED_POSITIONAL_EMBEDDINGS_SIZES = {
     'bert-base-cased-finetuned-mrpc': 512,
     'bert-base-german-dbmdz-cased': 512,
     'bert-base-german-dbmdz-uncased': 512,
+    'scibert-scivocab-uncased:': 512,
+    'scibert-scivocab-cased': 512,
+    'scibert-basevocab-uncased': 512,
+    'scibert-basevocab-cased': 512
 }
 
 PRETRAINED_INIT_CONFIGURATION = {
@@ -83,6 +91,10 @@ PRETRAINED_INIT_CONFIGURATION = {
     'bert-base-cased-finetuned-mrpc': {'do_lower_case': False},
     'bert-base-german-dbmdz-cased': {'do_lower_case': False},
     'bert-base-german-dbmdz-uncased': {'do_lower_case': True},
+    'scibert-scivocab-uncased:': {'do_lower_case': True},
+    'scibert-scivocab-cased': {'do_lower_case': False},
+    'scibert-basevocab-uncased': {'do_lower_case': True},
+    'scibert-basevocab-cased': {'do_lower_case': False}
 }
 
 
