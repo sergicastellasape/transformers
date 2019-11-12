@@ -48,6 +48,10 @@ BERT_PRETRAINED_MODEL_ARCHIVE_MAP = {
     'bert-base-cased-finetuned-mrpc': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-finetuned-mrpc-pytorch_model.bin",
     'bert-base-german-dbmdz-cased': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-cased-pytorch_model.bin",
     'bert-base-german-dbmdz-uncased': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-uncased-pytorch_model.bin",
+    'scibert-scivocab-uncased': "/Users/sergicastellasape/Repos/zeta-alpha/transformers/transformers/data/scibert_scivocab_uncased/pytorch_model.bin",
+    'scibert-scivocab-cased': "/Users/sergicastellasape/Repos/zeta-alpha/transformers/transformers/data/scibert_scivocab_cased/pytorch_model.bin",
+    'scibert-basevocab-uncased': "/Users/sergicastellasape/Repos/zeta-alpha/transformers/transformers/data/scibert_basevocab_uncased/pytorch_model.bin",
+    'scibert-basevocab-cased': "/Users/sergicastellasape/Repos/zeta-alpha/transformers/transformers/data/scibert_basevocab_cased/pytorch_model.bin"
 }
 
 

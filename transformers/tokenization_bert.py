@@ -46,10 +46,10 @@ PRETRAINED_VOCAB_FILES_MAP = {
         'bert-base-cased-finetuned-mrpc': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-finetuned-mrpc-vocab.txt",
         'bert-base-german-dbmdz-cased': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-cased-vocab.txt",
         'bert-base-german-dbmdz-uncased': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-uncased-vocab.txt",
-        'scibert-scivocab-uncased': "https://s3-us-west-2.amazonaws.com/ai2-s2-research/scibert/huggingface_pytorch/scibert_scivocab_uncased.tar",
-        'scibert-scivocab-cased': "https://s3-us-west-2.amazonaws.com/ai2-s2-research/scibert/huggingface_pytorch/scibert_scivocab_cased.tar",
-        'scibert-basevocab-uncased': "https://s3-us-west-2.amazonaws.com/ai2-s2-research/scibert/huggingface_pytorch/scibert_basevocab_uncased.tar",
-        'scibert-basevocab-cased': "https://s3-us-west-2.amazonaws.com/ai2-s2-research/scibert/huggingface_pytorch/scibert_basevocab_cased.tar"
+        'scibert-scivocab-uncased': "/Users/sergicastellasape/Repos/zeta-alpha/transformers/transformers/data/scibert_scivocab_uncased/vocab.txt",
+        'scibert-scivocab-cased': "/Users/sergicastellasape/Repos/zeta-alpha/transformers/transformers/data/scibert_scivocab_cased/vocab.txt",
+        'scibert-basevocab-uncased': "/Users/sergicastellasape/Repos/zeta-alpha/transformers/transformers/data/scibert_basevocab_uncased/vocab.txt",
+        'scibert-basevocab-cased': "/Users/sergicastellasape/Repos/zeta-alpha/transformers/transformers/data/scibert_basevocab_cased/vocab.txt"
     }
 }
 
