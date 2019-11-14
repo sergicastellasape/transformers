@@ -1,6 +1,6 @@
 import torch
+import stanfordnlp
 from transformers import *
-
 
 input_sentence = "this is a shorter test"
 
@@ -16,8 +16,8 @@ model = model_class.from_pretrained(pretrained_weights)
 tokenizer = tokenizer_class.from_pretrained(pretrained_weights)
 
 # generate input in the proper data format
-input_tokens = tokenizer.encode(input_sentence)
-input_tensor = torch.tensor([input_tokens])
+input_ids = tokenizer.encode(input_sentence)
+input_tensor = torch.tensor([input_ids])
 
 # run the model forward
 model_output = model(input_tensor)
