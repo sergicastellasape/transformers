@@ -45,7 +45,7 @@ BERT_PRETRAINED_CONFIG_ARCHIVE_MAP = {
     'scibert-scivocab-uncased': "/Users/sergicastellasape/Repos/zeta-alpha/transformers/transformers/data/scibert_scivocab_uncased/config.json",
     'scibert-scivocab-cased': "/Users/sergicastellasape/Repos/zeta-alpha/transformers/transformers/data/scibert_scivocab_cased/config.json",
     'scibert-basevocab-uncased': "/Users/sergicastellasape/Repos/zeta-alpha/transformers/transformers/data/scibert_basevocab_uncased/config.json",
-    'scibert-basevocab-cased': "/Users/sergicastellasape/Repos/zeta-alpha/transformers/transformers/data/scibert_basevocab_cased/config.json"
+    'scibert-basevocab-cased': "/Users/sergicastellasape/Repos/zeta-alpha/transformers/transformers/data/scibert_basevocab_cased/config.json",
 }
 
 
