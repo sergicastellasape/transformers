@@ -84,8 +84,12 @@ class Chunker():
             group = original_embeddings[indices, :]
             center = torch.mean(group, dim=0)
             new_embeddings_list.append(center)
-            
-        new_embeddings = torch.stack(new_embeddings_list, dim=0)
+
+        try:  
+            new_embeddings = torch.stack(new_embeddings_list, dim=0)
+        except:
+            print("No chunks were found!")
+            new_embeddings = None
     
         return new_embeddings
 
@@ -96,11 +100,12 @@ class Chunker():
         for chunk_indices in indices_to_compact:
             if len(chunk_indices) > 1:
                 tokens = [sentence_tokens[i] for i in chunk_indices]
-                # remove leading ## and everything after _ in tokens to match the words
-                tokens = [re.sub(r'_(.*)', '', token).replace('##', '') for token in tokens]
-                joint_token = '_'.join(tokens)
+                # remove everything after _ in tokens to match the words
+                tokens = [re.sub(r'_(.*)', '', token) for token in tokens]
+                joint_token = '_'.join(tokens).replace('_##', '')
                 new_tokens.append(joint_token)
             else:
+                
                 token = sentence_tokens[chunk_indices[0]]
                 new_tokens.append(token)
 
