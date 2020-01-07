@@ -28,7 +28,8 @@ class EmbeddingGenerator():
 
         compact_tensors_batch = self.initialize_padding_tensor_like(tensors_batch)
         # as all are zeros, this starts as an all false boolean mask
-        mask = torch.zeros(tensors_batch.size(), dtype=torch.bool)
+        batch_size, max_len, _ = tensors_batch.size()
+        mask = torch.zeros((batch_size, max_len), dtype=torch.bool)
 
         for b, chunk_indices in enumerate(indices_batch):
             for i, idx_tuple in enumerate(chunk_indices):
@@ -36,7 +37,7 @@ class EmbeddingGenerator():
                 # be something more complex, not just max pooling)
                 joint = self.pool_function(tensors_batch[b, idx_tuple, :])
                 compact_tensors_batch[b, i, :] = joint
-                mask[b, i, :] = True
+                mask[b, i] = True
 
         return compact_tensors_batch, mask
 
